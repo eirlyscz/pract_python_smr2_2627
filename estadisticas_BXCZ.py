@@ -1,7 +1,12 @@
-notas = [2.25, 9, 10, 7, 8.5, 4, 5, 6.5,0]
+notas = [5.25, 6, 7, 2.25, 8.33, 9, 10]
 
-print("Nota más alta:", max(notas))
-print("Nota más baja:", min(notas))
-print("Nota media:", sum(notas) / len(notas))
-print("¿Hay algún suspenso?", any(nota < 5 for nota in notas))
-print("¿No hay ningún cero?", all(nota != 0 for nota in notas))
+minimo = min(notas)
+maximo = max(notas)
+lista = len(notas)
+
+print("Cantidad de notas que hay:", lista)
+print("Maximo de las notas:", maximo)
+print("Minimo de las notas:", minimo)
+print("Nota media:", sum(notas)/len(notas))
+print("Hay suspensos?", any(notas)<5)
+print("Hay algún cero?:", all(notas)==0)
